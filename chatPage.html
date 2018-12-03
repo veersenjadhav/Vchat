@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Chat Page</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+</head>
+
+<body>
+<!-- Start your project here-->
+<img src="img/loading.gif" id="img_loading" style="width: auto; margin: auto; top: 0; bottom: 0; right: 0; left: 0; z-index: 20; position: fixed; opacity: 0.5; visibility: hidden;"/>
+<button class="btn btn-danger btn-sm" id="btn_logout" style="top: 0; right: 0; z-index: 30; position: fixed;">Logout</button>
+
+<div class="container-fluid">
+
+    <div class="card" style="width: 90%; margin: auto; margin-bottom: 20em; margin-top: 1em; height: auto;">
+
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title"></h4>
+        <!--Text-->
+        <p class="card-text" id="display_msg">
+        <ul id="list" style="list-style-type: none; padding: 0;"></ul>
+        </p>
+
+    </div>
+
+    </div>
+
+</div>
+
+<div style="width: 100%; bottom: 0; position: fixed; background-color: lightyellow; border-radius: 4px; padding: 1em 1em 1em 1em;" class="text-center">
+    <div class="md-form">
+        <input type="text" id="txt_message" class="form-control" autofocus>
+        <label for="txt_message">Enter Message</label>
+    </div>
+    <button class="btn btn-success" id="btn_send" style="width: 50%;">Send</button>
+
+</div>
+
+<!-- /Start your project here-->
+
+<!-- SCRIPTS -->
+<script src="cordova.js"></script>
+<script src="js/chatPage.js"></script>
+<script src="js/sweetalert.min.js"></script>
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

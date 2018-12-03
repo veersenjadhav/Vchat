@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+</head>
+
+<body>
+
+<!-- Start your project here-->
+<div class="container-fluid">
+
+    <div style="background-image: url(img/loginbg.jpg); width: 100%; background-size: 100% 100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+
+        <div class="card text-center" style="width: 90%; opacity: 0.9; margin: auto; margin-top: 3em;">
+
+            <img src="img/loading.gif" id="img_loading" style="width: 100%; height: 100%; z-index: 10; position: absolute; opacity: 0.5; visibility: hidden;"/>
+
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="md-form">
+                    <input type="email" id="txt_email" class="form-control" autofocus>
+                    <label for="txt_email">Email</label>
+                </div>
+                <div class="md-form">
+                    <input type="password" id="txt_password" class="form-control">
+                    <label for="txt_password">New Password</label>
+                </div>
+                <div class="md-form">
+                    <input type="password" id="txt_password_again" class="form-control">
+                    <label for="txt_password_again">Re-Enter Password</label>
+                </div>
+                <button class="btn btn-secondary" id="btn_sign_up" style="width: 50%;">Sign Up</button>
+            </div>
+            <div class="card-footer">
+                <p><a href="forgotPassword.html">Forgot Password ?</a></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- /Start your project here-->
+
+<!-- SCRIPTS -->
+<script src="cordova.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/signUp.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
